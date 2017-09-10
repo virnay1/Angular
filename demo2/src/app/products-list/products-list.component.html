@@ -1,0 +1,11 @@
+<div>     
+   <p *ngIf="productsList">
+     Showing {{productsList.length}} Products   
+   </p>
+   <ul>    
+     <li *ngFor = "let product of productsList">
+         Product {{product.ProductID}} : {{product.ProductName}}
+        costs {{product.UnitPrice}}      
+     </li>
+   </ul>  
+</div>
